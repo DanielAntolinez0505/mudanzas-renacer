@@ -9,6 +9,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { useTheme } from "next-themes";
+import Link from "next/link";
 
 export default function Header() {
   const { setTheme } = useTheme();
@@ -17,11 +18,11 @@ export default function Header() {
     <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0">
         <div className="flex gap-6 md:gap-10">
-          <a href="/" className="flex items-center space-x-2">
+          <Link href={"/"}>
             <span className="inline-block font-bold text-xl">
               Mudanzas El Renacer
             </span>
-          </a>
+          </Link>
         </div>
         <div className="flex flex-1 items-center justify-end space-x-4">
           <nav className="flex items-center space-x-1">
